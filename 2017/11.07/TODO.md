@@ -6,7 +6,6 @@
         - [리스트 자료형](https://wikidocs.net/14)
     - 넘어온 리스트 자료형에 담긴 문자들을 하나로 합쳐서 리턴
     - 리턴은 [문자열 자료형](https://wikidocs.net/13)인 **"I love python !"**
-
     ```python
     def join(str):
         # .. TODO
@@ -17,7 +16,6 @@
 
     print(result) # It will be: "I love python !"
     ```
-
 1. Python 코딩
     - 1 ~ 10 까지 더하기
     - one_to_ten은 1~10까지 담긴 [리스트](https://wikidocs.net/14)
