@@ -63,7 +63,7 @@ Host: kapi.kakao.com
 
 위의 API 문서를 통해 `sanghaklee` 계정의 정보를 가져오는 API 주소를 만들어서 PR!
 - 양아: '이 내용 지우고 주소 PR'
-- 민경: '이 내용 지우고 주소 PR'
+- 민경: GET api.github.com/users/sanhaklee
 
 아래의 내용을 다시 읽어보고 작업할 것
 
