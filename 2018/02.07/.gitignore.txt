@@ -1,2 +1,3 @@
 *.log
 .DSstore
+.vscode/settings.json 
