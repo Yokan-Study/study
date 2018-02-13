@@ -1,1 +1,0 @@
-https://api.coinone.co.kr/ticker?currency=all
