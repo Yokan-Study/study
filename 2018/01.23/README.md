@@ -62,13 +62,8 @@ Host: kapi.kakao.com
 [Get a single user](https://developer.github.com/v3/users/#get-a-single-user)
 
 위의 API 문서를 통해 `sanghaklee` 계정의 정보를 가져오는 API 주소를 만들어서 PR!
-<<<<<<< HEAD
 - 양아: '이 내용 지우고 주소 PR'
 - 민경: GET api.github.com/users/sanhaklee
-=======
-- 양아: https://api.github.com/users/sanghaklee
-- 민경: '이 내용 지우고 주소 PR'
->>>>>>> 0af05490cb2596b3d4d90299428fdcbe2805a3ef
 
 아래의 내용을 다시 읽어보고 작업할 것
 
