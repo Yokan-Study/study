@@ -1,8 +1,15 @@
-import requests, base64
+import requests, base64, configparser
+
+config = configparser.ConfigParser()
+config.read('../../config.ini')
+
+id = config['gAPI']['client_id']
+secret = config['gAPI']['client_secret']
+type = config['gAPI']['grant_type']
 
 
 def getToken():
-    r = requests.post('https://gapi.gabia.com/oauth/token', data={'client_id': '', 'client_secret': '', 'grant_type': ''})
+    r = requests.post('https://gapi.gabia.com/oauth/token', data={'client_id': id, 'client_secret': secret, 'grant_type': type})
     j = r.json()
     token_1 = j['access_token']
     token_2 = 'www_front:{0}'.format(token_1) # 크롬에서 btoa 했을 때 'www_front:{토큰}'을 넣었으니까 이렇게 해야하지 않나..?
