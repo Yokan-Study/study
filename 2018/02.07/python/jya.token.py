@@ -8,4 +8,4 @@ r = requests.post('https://gapi.gabia.com/oauth/token', data=data)
 j = r.json()
 token = j['access_token']
 
-print(token)
+# print(token)
