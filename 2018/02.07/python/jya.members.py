@@ -1,5 +1,5 @@
 import requests
-headers = {'Authorization': ''}
+headers = {'Authorization': '{key}'}
 #1명의 회원 이름 정보 가져오는 함수 getMember() 만들기
 
 def getMember(id):
