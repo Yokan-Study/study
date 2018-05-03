@@ -39,7 +39,7 @@ class gapiClass:
         return name
 
 a = gapiClass()
-b = a.getMember('kmkyeongkim11')
+b = a.getMember('test1gabia')
 print(b)
 
 
