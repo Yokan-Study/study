@@ -2,9 +2,26 @@
 
 import class_kmk
 a = class_kmk.gapiClass()
-
 #print(a.getMember('kmkyeongkim11')) 
 
-#2. user id에 따른 hanname 값들을 리스트 형태로 리턴하기 
+#2. user id에 따른 hanname 값들 출력하기  
+han_1 = a.getMember('kmkyeongkim11')
+han_2 = a.getMember('test1gabia')
+print(han_1), print(han_2)
+
 #3. 엑셀 파일 및 시트 활성화
-#4. 데이터 입력 (여긴 잘 모르게땅 아직 ㅎㅎ)
+from openpyxl import Workbook
+wb = Workbook()
+ws = wb.active
+
+data = [
+    ['kmkyeongkim11', han_1],
+    ['test1gabia', han_2],
+]
+
+ #3-1. add column headings
+ws.append(["아이디", "회원 이름" ])
+for row in data:
+    ws.append(row)
+
+wb.save("회원 리스트.xlsx")
