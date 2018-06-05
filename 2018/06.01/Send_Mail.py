@@ -5,6 +5,15 @@ from email.mime.multipart import MIMEMultipart
 headers = {'Authorization': 'Basic {key}'}
 
 
+# def get_template(number):
+#     r = requests.get('https://gapi.gabia.com/mail/templates?seqno={0}'.format(number), headers=headers)
+#     j = r.json()
+#     contents = j['contents']
+#     k = str(contents)
+#     return k
+# text = get_template(62)
+# API를 통해 템플릿 불러오기를 하려고 했는데, 템플릿 일부 코드 수정이 필요해서 아래와 같이 텍스트로 직접 입력함
+
 text = '''
 <html>
 <head>
@@ -83,14 +92,14 @@ text = '''
                                                 기준 금액 </th>
                                                 <th width="110" style="padding:8px 0; font:bold 14px/20px Malgun Gothic; color:#4b5964; letter-spacing:-1px; color:#4b5964; text-align:center; background:#f3f3f3; border-left:1px #e0e0e0 solid;">
                                                 연장 가능 기한 </th>
-                                            </tr>{#service_list}
+                                            </tr>
                                             <tr>
                                                 <td style="padding:8px 5px; font:14px/20px Malgun Gothic; color:#4b5964; border-top:1px #e0e0e0 solid; text-align:left;"> {service_name}<br /> <span style="font-size:13px;">{domain}</span> </td>
                                                 <td style="padding:8px 5px; font:14px/20px Malgun Gothic; color:#4b5964; border-top:1px #e0e0e0 solid; border-left:1px #e0e0e0 solid; text-align:center;">
                                                 {expiration_date} </td>
                                                 <td style="padding:8px 5px; font:14px/20px Malgun Gothic; color:#4b5964; border-top:1px #e0e0e0 solid; border-left:1px #e0e0e0 solid; text-align:right;"> {extension_expense}/{extension_period} </td>
                                                 <td style="padding:8px 5px; font:14px/20px Malgun Gothic; color:#4b5964; border-top:1px #e0e0e0 solid; border-left:1px #e0e0e0 solid; text-align:center;"> <b style="color:#f00;">{extendable_limit}</b>일 남음 </td>
-                                            </tr>{/service_list}</table>
+                                            </tr> </table>
                                         <table cellpadding="0" cellspacing="0" style="width:100%; *width:auto; table-layout:fixed; border-bottom:1px #a5a5a5 solid; word-break:break-all;">
                                             <tr>
                                                 <td style="text-align:right; padding:10px; font:bold 16px/1.2em Malgun Gothic; color:#000; background:#f8f8f8"> 총 {total_count} 건 </td>
@@ -196,6 +205,7 @@ text = '''
 </html>
 '''
 
+<<<<<<< HEAD
 data = {
     'hanname':'%회원이름%',
     'regist_date':'%작성일%',
@@ -222,20 +232,41 @@ data = {
         'extendable_limit':'%n%'
         }],
     'total_count':'3'
+=======
+# text_translated = text.translate({ord('{'):'{{', ord('}'):'}}'})
+# print(text_translated)
+# pystache.defaults.DELIMITERS를 통해 {{ → {로  변경하여 위 코드 제외함}
+
+input = {
+    'hanname':'조양아',
+    'regist_date':'2018-06-01',
+    'service_list':'22',
+    'service_name':'웹호스팅',
+    'domain':'gabia.com',
+    'expiration_date':'2018-06-20',
+    'extension_expense':'22,000원',
+    'extension_period':'월',
+    'extendable_limit':'19',
+    'total_count':'1'
+>>>>>>> parent of ce5c56f... add list
 }
 
-# data dictionary에 value에 해당하는 값을 DB에서 불러와야 함
+# input dictionary에 value에 해당하는 값을 DB에서 불러와야 함
 # 아이디/서비스번호 입력 시 자동 완성되도록
 # regist_date는 오늘 날짜(시스템 날짜?) 입력
 
 pystache.defaults.DELIMITERS = ('{', '}') 
-mail_text = pystache.render(text, data)
+mail_text = pystache.render(text, input)
 # print(mail_text)
 
 smtp = smtplib.SMTP('smtp.gmail.com', 587)
 smtp.ehlo()
 smtp.starttls()
+<<<<<<< HEAD
 smtp.login('jya9055@gmail.com', '{비밀번호}')
+=======
+smtp.login('{g메일 주소}', '{g메일 비밀번호}')
+>>>>>>> parent of ce5c56f... add list
 
 msg = MIMEMultipart('alternative')
 msg.attach(MIMEText(mail_text, 'html'))
