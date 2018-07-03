@@ -27,8 +27,8 @@ for w in row:
         #print(k)
         q = w['@id']
         #print(q)
-        board_seqno.append(k)
-        seqno.append(q)
+        seqno.append(k)
+        board_seqno.append(q)
 
 #print(board_seqno)
 #print(seqno)
@@ -39,8 +39,27 @@ num_dic = {
 }
 print(num_dic)
 
+
 import requests
-r = requests.get('http://admin2.gabia.com/voc/improve/service_info.php?seqno=26599&board_seqno=1891160')
+r = requests.post('http://admin2.gabia.com/voc/unite/getData/unite_info_data.php', data={'seq': k})
 #print(r.status_code)
-j = r.json()
-print(j)
+#print(text)
+g = xmltodict.parse(r.text)
+j = json.loads(json.dumps(g))
+#print(j)
+
+voc_title = j['data']['view_info']['view'][14]['#text']
+voc_body = j['data']['view_info']['view'][15]['#text']
+
+print("제목: " + voc_title)
+#print("내용: " + voc_body)
+
+import re
+def remove_tag(content):
+   cleanr =re.compile('<.*?>')
+   cleantext = re.sub(cleanr, '', content)
+   return cleantext
+
+print(remove_tag(voc_body))
+
+
