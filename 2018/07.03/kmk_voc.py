@@ -38,3 +38,8 @@ num_dic = {
     board_seqno: seqno for board_seqno, seqno in zip(board_seqno, seqno)
 }
 print(num_dic)
+
+import requests
+r = requests.post('http://admin2.gabia.com/voc/unite/getData/unite_info_data.php')
+j = r.json()
+print(j)
