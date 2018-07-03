@@ -40,6 +40,7 @@ num_dic = {
 print(num_dic)
 
 import requests
-r = requests.post('http://admin2.gabia.com/voc/unite/getData/unite_info_data.php')
+r = requests.get('http://admin2.gabia.com/voc/improve/service_info.php?seqno=26599&board_seqno=1891160')
+#print(r.status_code)
 j = r.json()
 print(j)
