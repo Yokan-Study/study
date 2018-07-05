@@ -1,0 +1,779 @@
+{
+	"id": "a4c4483e-b9b6-d46e-683a-ccf16d1d0523",
+	"name": "양갱 스터디",
+	"description": "",
+	"order": [
+		"66995635-b31e-7a15-5154-f4fb14f972c3",
+		"6a8f107e-89fd-b052-ce74-2f6566a3b294"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1509427597037,
+	"owner": "778573",
+	"public": false,
+	"requests": [
+		{
+			"id": "66995635-b31e-7a15-5154-f4fb14f972c3",
+			"headers": "",
+			"headerData": [],
+			"url": "AAA/booking/bookingAjax/addBooking",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a4c4483e-b9b6-d46e-683a-ccf16d1d0523",
+			"data": [
+				{
+					"key": "categoryNo",
+					"value": "155",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "resource_no[]",
+					"value": "194",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "date",
+					"value": "2017-11-09",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "booking_reason",
+					"value": "회의",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_time",
+					"value": "2017-11-09 16:00:00",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_time",
+					"value": "2017-11-09 17:00:00",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "회의실 예약",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1509427601335,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 275,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "68",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 31 Oct 2017 05:28:22 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=2, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "p3p",
+							"key": "p3p",
+							"value": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+							"description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/5.6.8",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "inmail.gabia.com",
+							"expirationDate": 1534204956,
+							"hostOnly": true,
+							"httpOnly": false,
+							"name": "PersonalMailboxOption",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "1"
+						},
+						{
+							"domain": "inmail.gabia.com",
+							"expirationDate": 1534895213,
+							"hostOnly": true,
+							"httpOnly": false,
+							"name": "board_toggle_key_org",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "1"
+						},
+						{
+							"domain": "inmail.gabia.com",
+							"expirationDate": 1534895214,
+							"hostOnly": true,
+							"httpOnly": false,
+							"name": "board_toggle_key",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "1"
+						},
+						{
+							"domain": "inmail.gabia.com",
+							"expirationDate": 1535415053,
+							"hostOnly": true,
+							"httpOnly": false,
+							"name": "MailOption",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "1"
+						},
+						{
+							"domain": "inmail.gabia.com",
+							"expirationDate": 1536278766,
+							"hostOnly": true,
+							"httpOnly": false,
+							"name": "cookie_only_name",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "0"
+						},
+						{
+							"domain": "inmail.gabia.com",
+							"expirationDate": 1539683351,
+							"hostOnly": true,
+							"httpOnly": false,
+							"name": "mbox_host_sck",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "Wg9RU9Fh6xPgZMSqwZhDjQNOpT2K+m7WGfM/HeMYjIo%3D"
+						},
+						{
+							"domain": "inmail.gabia.com",
+							"expirationDate": 1539683351,
+							"hostOnly": true,
+							"httpOnly": false,
+							"name": "id_sck",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "g/P7Km0AIHZLwTq/781MTmw5voAqmoGTn01LspP3kfs%3D"
+						},
+						{
+							"domain": ".gabia.com",
+							"expirationDate": 2455065503,
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "_INSIGHT_CK_4504",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "b3b01c09075401273174e9991e5e332d_85503|6883a6131b19e02ee267e9991e5e332d_85503:1508987303000"
+						},
+						{
+							"domain": ".gabia.com",
+							"expirationDate": 2455170193,
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "_INSIGHT_CK_4513",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "3860b620fdb64110a1ffcfdf573ccf60_20623|8a0e7119c33de1263648f095b80ad763_90035:1509091993000"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "PHPSESSID",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "42novlaied0urogeo514l02k35"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "cookie_id",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "GM1702846"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "alarm_term",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "10"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "alarm_mode",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "LINK"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "cookie_id_name",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "%C0%CC%BB%F3%C7%D0"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "cookie_id_name_utf8",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "%EC%9D%B4%EC%83%81%ED%95%99"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "cookie_guser_client_ip",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "10.17.28.46"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "gadmin_privite_code",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "hL4%2B1y6NHd2bL4%2FYsoZguldYUqQM19H7eE3VXWHkNQ8OB%2FEuOd3WFytf1gB8tUG3"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "adminsession",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%2247a94a589e1b8fba0e4d8c8d7f57c831%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A13%3A%2261.35.204.100%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A115%3A%22Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F61.0.3163.100+Safari%2F537.36%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1509409793%3B%7Dbe27c14fa44fff4085f02c7b052215a7"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "cookie_login_origin_site",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "http%3A%2F%2Fwww.gabia.com"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "cookie_login_target_url",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "%2Fmygabia%2Findex.php"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "my_first_girl",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "uAYe6OqvRXM2VETTx2THCIG1Y%2BQpVb%2FfhqmUq04UXcPvNIN6hJN%2BChOXLpUgGfPs"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "my_second_girl",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "e1jEWFQ9DQpRDUiNwZSnIOsr6xrHZ9IA47kMIgk%2FuCM%3D"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "my_third_girl",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "fonllqEHIVFzkq5IrGGrRj09cxJoOSfkGTV3H%2Fp2SPz2C92%2FbNPwOjnEQcecXUdM"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "my_fourth_girl",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "7J207IOB7ZWZ"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "__whoispopup__",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "MjAxNzEwMzFfX3dob2lzaW5mb19f"
+						},
+						{
+							"domain": ".gabia.com",
+							"expirationDate": 2455489794,
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "_INSIGHT_CK_4507",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "b9b8601011f9519c215b9dd903c8fa9b_76709|057a1123d1fc82203952778282f1aecd_09794:1509411594000"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "gasession",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "a35680fbe70bd93531207d4f95e922a4"
+						},
+						{
+							"domain": ".gabia.com",
+							"expirationDate": 1572499059,
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "_ga",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "GA1.2.1736135397.1508476709"
+						},
+						{
+							"domain": ".gabia.com",
+							"expirationDate": 1509513459,
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "_gid",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": false,
+							"storeId": "0",
+							"value": "GA1.2.1459639676.1509321145"
+						},
+						{
+							"domain": ".gabia.com",
+							"hostOnly": false,
+							"httpOnly": false,
+							"name": "room",
+							"path": "/",
+							"sameSite": "no_restriction",
+							"secure": false,
+							"session": true,
+							"storeId": "0",
+							"value": "DeMlZ10e7UkHE5fL6SgBW2rZt3irxMgMrFkwAWbDC%2Fw%3D"
+						}
+					],
+					"mime": "",
+					"text": "{\"resultCode\":\"SUCCESS\",\"result\":null,\"message\":null,\"layerID\":null}",
+					"language": "html",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "회의실 예약",
+					"id": "1bd63dc8-c40c-d58e-d2d7-16587b9872b0",
+					"request": {
+						"url": "AAA/booking/bookingAjax/addBooking",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Content-Type: application/x-www-form-urlencoded\n",
+						"data": [
+							{
+								"key": "categoryNo",
+								"value": "155",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "resource_no[]",
+								"value": "194",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "date",
+								"value": "2017-11-09",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "booking_reason",
+								"value": "회의",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "start_time",
+								"value": "2017-11-09 17:00:00",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "end_time",
+								"value": "2017-11-09 18:00:00",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
+						"dataMode": "urlencoded"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6a8f107e-89fd-b052-ce74-2f6566a3b294",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "BBB/domain/reformAdmin/gtld_statistics/krnic_nida_data_process.php",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a4c4483e-b9b6-d46e-683a-ccf16d1d0523",
+			"data": [
+				{
+					"key": "data[2017-11-06][new]",
+					"value": "361",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-06][renew]",
+					"value": "1172",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-06][transfer]",
+					"value": "6",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-06][new_cancel]",
+					"value": "28",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-06][renew_cancel]",
+					"value": "7",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-06][transfer_cancel]",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-06][new_total]",
+					"value": "807",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-06][renew_total]",
+					"value": "2404",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-06][krnic_total]",
+					"value": "1072697",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-06][gabia_total]",
+					"value": "410145",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][new]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][renew]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][transfer]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][new_cancel]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][renew_cancel]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][transfer_cancel]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][new_total]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][renew_total]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][krnic_total]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data[2017-11-07][gabia_total]",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "일일 통계 현황 저장 - kmk",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510026326433,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
