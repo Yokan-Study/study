@@ -78,10 +78,10 @@ msg['Subject'] = voc_title
 msg['From'] = me
 msg['To'] = you
 
-smtp = smtplib.SMTP('smtp.gmail.com:587')
+smtp = smtplib.SMTP('smtp.gmail.com', 534)
 smtp.ehlo()
 smtp.starttls()
-smtp.login('kmkgabia@gmail.com', 'password hidden')
+smtp.login('kmkgabia@gmail.com', 'Rhfenrl11!')
 smtp.sendmail('kmkgabia@gmail.com', 'kathleenminkyeongkim@gmail.com', msg.as_string())
 
 smtp.quit()
