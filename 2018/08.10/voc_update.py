@@ -1,18 +1,3 @@
-from flask import flask
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
-
-
-
-
-
-
-
-
-
 import smtplib
 from email.mime.text import MIMEText
 from email import utils
