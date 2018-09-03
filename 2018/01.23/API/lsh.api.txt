@@ -1,1 +1,0 @@
-api.cone.com/v1/price?coin=qtum
