@@ -21,17 +21,8 @@ row = j['rows']['row']
 for w in row:
     o = w['cell'][7]
     p = w['@id']
-<<<<<<< HEAD
-<<<<<<< HEAD
-    if o == '최선애':8
-=======
-    if o == '최선애':
->>>>>>> b08bddcc9900f64758e44d2eac53e60888e219a2
-        k = w['userdata']['#text']
-=======
     if o == '이정훈':
         t = w['userdata']['#text']
->>>>>>> 357a879481d662b7e2c57ccd6f827666dc9032c9
         q = w['@id']
 #print(t)
 #print(q)
