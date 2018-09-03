@@ -90,7 +90,7 @@ msg['To'] = you
 smtp = smtplib.SMTP('smtp.gmail.com', 534)
 smtp.ehlo()
 smtp.starttls()
-smtp.login('kmkgabia@gmail.com', 'Rhfenrl11!')
+smtp.login('kmkgabia@gmail.com', 'pw hidden')
 smtp.sendmail('kmkgabia@gmail.com', 'kathleenminkyeongkim@gmail.com', msg.as_string())
 
 smtp.quit()
