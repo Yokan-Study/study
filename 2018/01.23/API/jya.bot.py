@@ -1,3 +1,4 @@
+
 # 함수 가져옵니다
 import requests, threading
 def getPrice(coin):
@@ -17,5 +18,3 @@ while money:
     money = money - getPrice('qtum')
     if money < getPrice('qtum'):
         break
-
-

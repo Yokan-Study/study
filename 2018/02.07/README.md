@@ -20,6 +20,6 @@ Cache-Control: no-cache
 ```python
 import requests
 headers = {'Authorization': 'Basic {KEY}'}
-r = requests.get('https://gapi.gabia.com/roadcode', headers=headers)
+r = requests.get('', headers=headers)
 ```
 
